@@ -18,7 +18,7 @@ public class Pool<T> {
 		this.freeObjects = new ArrayList<T>(maxSize);
 	}
 
-	public T newObjects() {
+	public T newObject() {
 		T object = null;
 		if (freeObjects.size() == 0) {
 			object = factory.createObject();
